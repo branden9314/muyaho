@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  .js{color:red;background-color: yellow;}
+  #first{color:blue;background-color:lime;font-weight: bold}
+  span{color:hotpink;background-color:lightgreen;font-weight: bold;}
+  </style>
+  <title> Harry Potter</title>
+</head>
+
+<body style="background-color:purple">
+    <h1 style="background-color:yellow"><a href="https://en.wikipedia.org/wiki/Harry_Potter"
+        target="_blank" title="go to wikipedia site">  <span class="js">Harry Potter</span></a></h1>
+        <h2>
+          <ol style="color:powderblue">
+            <li style="color:blue;background-color:coral;">author</li>
+            <li style="color:lime">series</li>
+            <li style="color:navy">actors</li>
+          </ol></h2>
+
+          <h2 id="third" style="color:white">Summary</h2>
+          <p id="second" style="background-color:white;">
+             <span id="first" class="js">Harry Potter</span> is a series of seven fantasy novels written by British author, J. K. Rowling. The novels chronicle the lives of a young wizard,   <span class="js">Harry Potter</span>, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).<br>
+
+          Since the release of the first novel,   <span class="js">Harry Potter</span> and the Philosopher's Stone, on 26 June 1997, the <span>books</span> have found immense popularity, positive reviews, and commercial success worldwide. They have attracted a wide adult audience as well as younger readers and are often considered cornerstones of modern young adult literature.[2] As of February 2018, the <span>books</span> have sold more than 500 million copies worldwide, making them the best-selling book series in history, and have been translated into eighty languages.[3] The last four <span>books</span> consecutively set records as the fastest-selling <span>books</span> in history,
+          with the final installment selling roughly eleven million copies in the United States within twenty-four hours of its release.
+          </p>
+
+          <input type="button", value="hellobot", onclick="alert('hi')">
+          <input type="button" value="night" onclick="
+          document.querySelector('body').style.backgroundColor='black'
+          document.querySelector('body').style.color='white'
+          document.querySelector('#second').style.backgroundColor='black'
+          document.querySelector('#third').style.color='skyblue'">
+          <input type="button", value="day" onclick="
+          document.querySelector('body').style.backgroundColor='purple'
+          document.querySelector('body').style.color='black'
+          document.querySelector('#second').style.backgroundColor='white'
+          document.querySelector('#third').style.color='white'">
+
+          <input id="toggle_night"type="button", value="toggle_night", onclick="
+          if (document.querySelector('#toggle_night').value==='toggle_night')
+          {document.querySelector('body').style.backgroundColor='black'
+          document.querySelector('body').style.color='white'
+          document.querySelector('#second').style.backgroundColor='black'
+          document.querySelector('#third').style.color='skyblue'
+          document.querySelector('#toggle_night').value='toggle_day'}
+          else
+          {document.querySelector('body').style.backgroundColor='purple'
+          document.querySelector('body').style.color='black'
+          document.querySelector('#second').style.backgroundColor='white'
+          document.querySelector('#third').style.color='white';
+          document.querySelector('#toggle_night').value='toggle_night'}
+          ">
+    </body>
+    </html>

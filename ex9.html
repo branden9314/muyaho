@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:lightgreen">
+    <h1>Rainbow</h1>
+    <input  type="button" value="night" onclick="
+    var target= document.querySelector('body')
+    if (this.value==='night')
+    { target.style.backgroundColor='navy';
+      target.style.color='white';
+      this.value='day'
+    } else{
+      target.style.backgroundColor='lightgreen';
+      target.style.color='black';
+      this.value='night'
+    }">
+        <script>
+      var color=['red','orange','yellow','green','blue','navy','purple']
+    </script>
+
+    <ol>
+    <script>
+      var i=0;
+      while(i<color.length)
+      {document.write('<li><a href="www.abc.com/'+color[i]+'">'+color[i]+'</a></li>')
+      i=i+1}
+    </script>
+
+    </ol>
+    <h2>summary</h2>
+    <p>A rainbow is a meteorological phenomenon that is caused by reflection, refraction and dispersion of light in water droplets resulting in a spectrum of light appearing in the sky. It takes the form of a multicoloured circular arc. Rainbows caused by sunlight always appear in the section of sky directly opposite the Sun.
+
+Rainbows can be full circles. However, the observer normally sees only an arc formed by illuminated droplets above the ground,[1] and centered on a line from the sun to the observer's eye.
+  </p>
+
+  <input  type="button" value="night2" onclick="
+  if (this.value==='night2')
+  {document.querySelector('body').style.backgroundColor='navy';
+    document.querySelector('body').style.color='white';
+    this.value='day2'}
+  else
+
+  {document.querySelector('body').style.backgroundColor='lightgreen';
+  document.querySelector('body').style.color='black';
+  this.value='night2'
+  }">
+    </body>
+</html>
